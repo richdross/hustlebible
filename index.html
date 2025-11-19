@@ -3,115 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GWAP HUSTLE BIBLE</title>
-
+<title>Gwap Hustle Bible</title>
 <style>
     body {
-        margin: 0;
-        font-family: 'Arial Black', sans-serif;
         background-color: #000;
+        font-family: Arial, sans-serif;
         text-align: center;
         color: #00FF40;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        margin-top: 80px;
+    }
+
+    .skull {
+        width: 260px;
+        margin: auto;
+        display: block;
+        filter: drop-shadow(0px 0px 25px #00ff40);
+        transform: translateY(0);
+        transition: transform 0.2s ease-out;
+    }
+
+    /* Cursor Tracking Animation */
+    body:hover .skull {
+        transform: translateY(-8px);
     }
 
     h1 {
-        margin-top: 120px;
-        font-size: 48px;
-        text-shadow: 0px 0px 12px #00ff40;
-        animation: glow 2s infinite alternate;
-    }
-
-    @keyframes glow {
-        from { text-shadow: 0 0 10px #00ff40; }
-        to { text-shadow: 0 0 25px #00ff40; }
-    }
-
-    h2 {
-        margin-top: 10px;
-        font-size: 20px;
-        color: #00FF40;
-        opacity: .85;
-    }
-
-    .hero-img {
-        width: 240px;
-        margin-top: 40px;
-        filter: drop-shadow(0 0 20px #00ff40);
-        animation: pulse 3s infinite;
-    }
-
-    @keyframes pulse {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.05); }
-        100% { transform: scale(1); }
-    }
-
-    .bullet-list {
-        margin-top: 45px;
-        font-size: 18px;
-        line-height: 35px;
-    }
-
-    .cta {
-        display: inline-block;
-        margin-top: 50px;
-        padding: 18px 50px;
-        font-size: 24px;
+        font-size: 42px;
         font-weight: bold;
-        background-color: #00ff40;
-        color: #000;
-        border-radius: 10px;
-        text-decoration: none;
-        transition: 0.25s;
-        box-shadow: 0px 0px 20px #00ff40;
+        margin-top: 20px;
+        text-shadow: 0 0 18px #00FF40;
     }
 
+    .tagline {
+        font-size: 18px;
+        margin-top: 10px;
+        opacity: 0.9;
+    }
+
+    /* Animated Money Sigils */
+    .sigils {
+        margin-top: 15px;
+        font-size: 24px;
+        animation: rotateSigils 3.5s linear infinite;
+    }
+
+    @keyframes rotateSigils {
+        0% { transform: rotate(0deg); opacity: 0.6; }
+        50% { opacity: 1; }
+        100% { transform: rotate(360deg); opacity: 0.6; }
+    }
+
+    /* CTA Button */
+    .cta {
+        margin-top: 35px;
+        background-color: #00FF40;
+        border: none;
+        padding: 14px 36px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.25s;
+        color: #000;
+        border-radius: 6px;
+    }
     .cta:hover {
         background-color: #00cc33;
-        transform: translateY(-3px);
+        box-shadow: 0 0 18px #00FF40;
     }
 
-    .guarantee {
-        font-size: 16px;
-        margin-top: 25px;
-        opacity: .7;
+    /* Code Rain */
+    .rain {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        opacity: 0.33;
     }
 
-    footer {
-        margin-top: 65px;
-        font-size: 12px;
-        opacity: .4;
-    }
 </style>
 </head>
 
 <body>
 
-<h1>Break Out The Matrix.</h1>
-<h2>Make Money While You Sleep.</h2>
-
-<!-- HERO IMAGE (AI Brain + Money Fusion) -->
-<img class="hero-img" src="https://i.imgur.com/ZG12k7Z.png" alt="AI Money Brain">
-
-<div class="bullet-list">
-    ✔️ Proven income systems used by silent millionaires<br>
-    ✔️ Weekends → Passive payouts<br>
-    ✔️ No tech skills required<br>
-    ✔️ AI does 90% of the work<br>
-    ✔️ Striver mindset — grind smart, not hard<br>
+<div class="rain">
+<pre>
+| $ $ $ $ $ $ $ $ $ $ |
+| 0 1 0 1 0 G G 1 0 $ |
+| Hustle Bible Mode   |
+| $  Automate Income  |
+| 0 1 0 1 0 G G 1 0 $ |
+</pre>
 </div>
 
-<a class="cta" href="https://buy.stripe.com/5k8kbtbgtKces2F6zgb1" target="_blank">
-    Secure My HustleBible
-</a>
+<div class="hero">
+    <img src="skull.png" alt="Crypto Prophet Skull" class="skull">
+    <h1>GWAP HUSTLE BIBLE</h1>
+    <div class="tagline">Make Money While You Sleep</div>
 
-<div class="guarantee">
-    💰 7-Day Money-Back Guarantee — Zero Risk.
+    <div class="sigils">$ $ $ $ $</div>
+
+    <a href="https://buy.stripe.com/5kQ5kEbTkgzkcqS2F62c001">
+        <button class="cta">Buy Now</button>
+    </a>
 </div>
-
-<footer>
-Powered by GWAP GANG ⚡ Build Your Own Empire
-</footer>
 
 </body>
 </html>
+
+</body>
+</html>
+
